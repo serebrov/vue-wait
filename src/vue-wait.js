@@ -78,7 +78,7 @@ export default class VueWait {
 
       if (VueWait.getVueVersion(App) > 2) {
         const { createApp } = require('vue');
-        // A template is only needed to avoid Vu3 3 warning
+        // A template is only needed to avoid Vue 3 warning
         // [Vue warn]: Component is missing template or render function.
         config['template'] = '<i></i>';
         this.stateHandler = createApp(config).mount(
@@ -122,7 +122,7 @@ export default class VueWait {
 
       if (VueWait.getVueVersion(App) > 2) {
         const { createApp } = require('vue');
-        // A template is only needed to avoid Vu3 3 warning
+        // A template is only needed to avoid Vue 3 warning
         // [Vue warn]: Component is missing template or render function.
         config['template'] = '<i></i>';
         this.stateHandler = createApp(config).mount(
